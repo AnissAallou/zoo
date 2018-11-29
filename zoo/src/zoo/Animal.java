@@ -72,11 +72,10 @@ public class Animal {
 	}
 	
 	
-	public void setPacs(Animal pacs) {
+	public boolean setPacs(Animal pacs) {
 		
-		if(this.sexe == "H") {
-			
-			
+		boolean mariage = false;
+		if(this.sexe == "H") {	
 			if(this.sexe != pacs.sexe ) {
 				if(this.race.equals(pacs.race)){
 					if(this.getPacs() == null) {
@@ -95,6 +94,8 @@ public class Animal {
 		}else {
 			System.out.println("info pas renseignée pour l'animal");
 		}
+		
+		return mariage;
 		
 	}
 
